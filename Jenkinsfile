@@ -13,7 +13,7 @@ node('master-node') {
          * docker build on the command line */
 
         script {
-                                dockerImage = docker.build registry + ":$BUILD_NUMBER" 
+                                dockerImage = docker.build "fu-docker-agent" + ":$BUILD_NUMBER" 
         }
     }
 
